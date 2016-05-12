@@ -1,0 +1,33 @@
+{
+  "name": "Launchpad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "bundle-lib": "jspm bundle react + react-dom + react-router + material-ui + material-ui/styles public/dist/lib.js --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jspm": "^0.16.34"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "public"
+    },
+    "dependencies": {
+      "history": "npm:history@^2.1.1",
+      "material-ui": "npm:material-ui@^0.15.0",
+      "react": "npm:react@^15.0.2",
+      "react-dom": "npm:react-dom@^15.0.2",
+      "react-router": "npm:react-router@^2.4.0"
+    },
+    "devDependencies": {}
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "history": "^2.1.1"
+  }
+}
